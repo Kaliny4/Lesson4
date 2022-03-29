@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form action="/login" method="POST">
+		<p>
+			<label>Username:</label>
+		<label><input type="text" name="username" required autofocus/></label>
+		<label>Time:</label>
+		<label><input type="time"/></label>
+		</p>
+		<p>
+			<label>Password:</label>
+		<label><input type="password" name="password" required size="20"/></label>
+		</p>
+		<button type="submit">Submit</button>
+	</form>
+	
+	<form action="/action_page.php" method="get">
+		<p>
+		<label>Search:</label>
+		<label><input type="search"/></label>
+		</p>
+		<p>
+			<legend><h2>Personal Information</h2></legend>
+		</p>
+		<fieldset>
+			<p>
+				<label>First Name:</label>
+			<label><input type="text" name="name" required/></label>
+				<label> Last Name:</label>
+			<label><input type="text" name="lastName" required/></label>
+			</p>
+			<p>
+				<label>Gender:</label>
+				<p>
+					<label><input type="radio" name="sex" value="male" /> male</label>
+				</p>
+	
+				<p>
+					<label><input type="radio" name="sex" value="female" /> female</label>
+				</p>
+			</p>
+			<p>
+				<label>Date of birth:</label>
+			<label><input type="date" placeholder="dd/mm/yyyy"/></label>
+			</p>
+		</fieldset>
+		<p>
+			<legend><h2>Contact Information</h2></legend>
+		</p>
+		<fieldset>
+			<p>
+				<label>Country:</label>
+			<label><input type="text" name="country" required/></label>
+				<label> City:</label>
+			<label><input type="text" name="city"/></label>
+			</p>
+			<p>
+				<label>Email:</label>
+				<label><input type="email" required/></label>
+			</p>
+			<p>
+				<label>Phone number:</label>
+				<label><input type="tel"/></label>
+			</p>
+		</fieldset>
+		<p>
+			<legend><h2>About Me</h2></legend>
+		</p>
+		<fieldset>
+			<p>
+				<label>Language:</label>
+				<select multiple>
+					<option>English</option>
+					<option>German</option>
+					<option>Ukrainian</option>
+					<option>Russian</option>
+					<option>French</option>
+					<option>Spanish</option>
+				</select>
+			</p>
+			<p>
+	<label>About:</label>
+	<textarea cols="40" rows="10" wrap="soft" placeholder="Tell us about yourself"></textarea>
+</p>
+<p>
+<label>Do you like yourself?</label>
+	<label><input type="range" max="10" min="1"/></label>
+</p>
+<p>
+	<label>Your social network:</label>
+	<label><input type="url" placeholder="Insert link"/></label>
+</p>
+		</fieldset>
+		<p>
+			<label>
+			<input type="checkbox" checked/> Agree to use my personal data
+			</label>
+		<p>
+		<button type="submit">Submit</button>
+		</p>
+	</form>
+</body>
+</html>
